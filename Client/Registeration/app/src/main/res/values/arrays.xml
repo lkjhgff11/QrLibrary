@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="library">
+        <item>대연/중앙도서관</item>
+        <item>대연/구도서관</item>
+        <item>용당/공학도서관</item>
+
+
+    </string-array>
+</resources>

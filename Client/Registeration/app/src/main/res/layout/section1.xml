@@ -1,0 +1,395 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/section1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="5dp">
+
+    <RelativeLayout
+        android:id="@+id/seatBtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="10dp">
+
+        <ImageView
+            android:id="@+id/seatImage1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/r_seat_empty" />
+
+        <TextView
+            android:id="@+id/seatNumber1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:paddingTop="10dp"
+            android:text="1"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/seatPg1"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="90dp"
+            android:layout_height="15dp"
+            android:layout_below="@id/seatNumber1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:progressBackgroundTint="#002200"
+            android:progressTint="#88cc88"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/seatState1_taked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/seatPg1"
+            android:layout_alignLeft="@id/seatPg1"
+            android:layout_marginBottom="20dp"
+            android:text="@string/taked"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/seatState1_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seatNumber1"
+            android:layout_centerHorizontal="true"
+            android:text="@string/empty"
+            android:textColor="#8888bb"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/seatBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/seatBtn1"
+        android:layout_toRightOf="@id/seatBtn1"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="10dp">
+
+        <ImageView
+            android:id="@+id/seatImage2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/r_seat_empty" />
+
+        <TextView
+            android:id="@+id/seatNumber2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:paddingTop="10dp"
+            android:text="2"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/seatPg2"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="90dp"
+            android:layout_height="15dp"
+            android:layout_below="@id/seatNumber2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:progressBackgroundTint="#002200"
+            android:progressTint="#88cc88"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/seatState2_taked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/seatPg2"
+            android:layout_alignLeft="@id/seatPg2"
+            android:layout_marginBottom="20dp"
+            android:text="@string/taked"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/seatState2_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seatNumber2"
+            android:layout_centerHorizontal="true"
+            android:text="@string/empty"
+            android:textColor="#8888bb"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/seatBtn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/seatBtn2"
+        android:layout_toRightOf="@id/seatBtn2"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="10dp">
+
+        <ImageView
+            android:id="@+id/seatImage3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/r_seat_empty" />
+
+        <TextView
+            android:id="@+id/seatNumber3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:paddingTop="10dp"
+            android:text="3"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/seatPg3"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="90dp"
+            android:layout_height="15dp"
+            android:layout_below="@id/seatNumber3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:progressBackgroundTint="#002200"
+            android:progressTint="#88cc88"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/seatState3_taked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/seatPg3"
+            android:layout_alignLeft="@id/seatPg3"
+            android:layout_marginBottom="20dp"
+            android:text="@string/taked"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/seatState3_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seatNumber3"
+            android:layout_centerHorizontal="true"
+            android:text="@string/empty"
+            android:textColor="#8888bb"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/seatBtn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seatBtn1"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="10dp">
+
+        <ImageView
+            android:id="@+id/seatImage4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/r_seat_empty" />
+
+        <TextView
+            android:id="@+id/seatNumber4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:paddingTop="10dp"
+            android:text="4"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/seatPg4"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="90dp"
+            android:layout_height="15dp"
+            android:layout_below="@id/seatNumber4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:progressBackgroundTint="#002200"
+            android:progressTint="#88cc88"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/seatState4_taked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/seatPg4"
+            android:layout_alignLeft="@id/seatPg4"
+            android:layout_marginBottom="20dp"
+            android:text="@string/taked"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/seatState4_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seatNumber4"
+            android:layout_centerHorizontal="true"
+            android:text="@string/empty"
+            android:textColor="#8888bb"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/seatBtn5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/seatBtn4"
+        android:layout_toRightOf="@id/seatBtn4"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="10dp">
+
+        <ImageView
+            android:id="@+id/seatImage5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/r_seat_empty" />
+
+        <TextView
+            android:id="@+id/seatNumber5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:paddingTop="10dp"
+            android:text="5"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/seatPg5"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="90dp"
+            android:layout_height="15dp"
+            android:layout_below="@id/seatNumber5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:progressBackgroundTint="#002200"
+            android:progressTint="#88cc88"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/seatState5_taked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/seatPg5"
+            android:layout_alignLeft="@id/seatPg5"
+            android:layout_marginBottom="20dp"
+            android:text="@string/taked"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/seatState5_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seatNumber5"
+            android:layout_centerHorizontal="true"
+            android:text="@string/empty"
+            android:textColor="#8888bb"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/seatBtn6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/seatBtn5"
+        android:layout_toRightOf="@id/seatBtn5"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="10dp">
+
+        <ImageView
+            android:id="@+id/seatImage6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/r_seat_empty" />
+
+        <TextView
+            android:id="@+id/seatNumber6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:paddingTop="10dp"
+            android:text="6"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/seatPg6"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="90dp"
+            android:layout_height="15dp"
+            android:layout_below="@id/seatNumber6"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:progressBackgroundTint="#002200"
+            android:progressTint="#88cc88"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/seatState6_taked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/seatPg6"
+            android:layout_alignLeft="@id/seatPg6"
+            android:layout_marginBottom="20dp"
+            android:text="@string/taked"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/seatState6_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seatNumber6"
+            android:layout_centerHorizontal="true"
+            android:text="@string/empty"
+            android:textColor="#8888bb"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</RelativeLayout>

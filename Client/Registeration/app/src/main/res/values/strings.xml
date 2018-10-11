@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Registeration</string>
+    <string name="Num1">Num1</string>
+    <string name="Num2">Num2</string>
+    <string name="Num3">NUM3</string>
+    <string name="taked">대여중...</string>
+    <string name="empty">대 여 가 능</string>
+    <string name="tab1">제1열람실</string>
+    <string name="tab2">제2열람실</string>
+    <string name="tab3">노트북실</string>
+</resources>
