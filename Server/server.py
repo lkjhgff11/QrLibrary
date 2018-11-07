@@ -5,7 +5,7 @@ from pprint import pprint
 while True:
    try:
       s = socket.socket()
-      host = '192.168.1.219'
+      host = '192.168.43.139'
       port = 9876
       s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
       s.bind((host, port))
@@ -18,6 +18,7 @@ while True:
              # Halts
              print( '[Waiting for connection...]')
              c, addr = s.accept() #  (socket object, address info) return
+
              print( 'Got connection from', addr)
          else:
              # Halts
@@ -29,6 +30,7 @@ while True:
              print('REQ]',request)
              print('RES]',response)
              c.send(response.encode('utf-8'))
+             c = None
    except ConnectionAbortedError as e:
       print('break------------')
       continue
