@@ -19,8 +19,8 @@ class Library():
         
         name = name.replace('/','_')
         self.db_name = name + '.lb'
-        self.default_life = 120 # 처음 앉으면 몇분 이후에 마감되는지
-        self.extending_time = 120 # 한번 연장에 몇분씩 늘어나는
+        self.default_life       = 120 # 처음 앉으면 몇분 이후에 마감되는지
+        self.extending_time     = 120 # 한번 연장에 몇분씩 늘어나는
         self.extending_min_time = 120 # 최소 몇분 이하부터 연장 가능한지
         
         conn, cursor = self.get_cc()
