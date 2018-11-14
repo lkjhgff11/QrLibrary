@@ -3,7 +3,7 @@ from library import Library
 from library_manager import LibraryManager
 from pprint import pprint
 from inspect import signature
-from collections import Iterable
+from collections.abc import Iterable
 
 import sqlite3
 
@@ -12,8 +12,11 @@ lib_to_user = {
 }
 
 user_pknu = [
-    ['201412839','1234','choe'],
-    ['201412840','1235','choe2'],
+    ['201412839', '1234', 'choe'],
+    ['201412840', '1235', 'choe2'],
+    ['201530266', '1234', 'cmj'],
+    ['201530256', '1234', 'kjs'],
+    ['201312825', '1234', 'jhj']
 ]
 
 data_pklib = {
