@@ -231,11 +231,15 @@ public class ExtendActivity extends AppCompatActivity {
             IntentResult scanResult = IntentIntegrator.parseActivityResult ( requestCode, resultCode, intent );
             String QRCode = scanResult.getContents ();
             data = "3,3," + token + "," + QRCode;
+
+
+
             try {
-                Thread.sleep ( 5000 );
+                Thread.sleep ( 1000 );
+
             } catch (Exception e) {
 
-                Toast.makeText ( getApplicationContext (), e.toString (), Toast.LENGTH_LONG ).show ();
+
             }
 
             Handler handler1;
@@ -259,6 +263,8 @@ public class ExtendActivity extends AppCompatActivity {
                         etx *= 100;
 
                         ExitTimeView.setText ( " " + timeformet.format ( new Date ( etx ) ) );
+                        
+                        Toast.makeText ( ExtendActivity.this, "연장되었습니다.", Toast.LENGTH_SHORT ).show ();
                     } else if (minji[0].equals ( "201" )) {
 
                         Toast.makeText ( ExtendActivity.this, "잘못된 qr코드입니다.", Toast.LENGTH_SHORT ).show ();
