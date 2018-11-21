@@ -38,7 +38,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private AlertDialog dialog;
     String token, data;
-    String ip = "192.168.43.139";
+    String ip = "192.168.46.62";
     int port =  9876;
     ClientThread clientThread;
     Handler handler;

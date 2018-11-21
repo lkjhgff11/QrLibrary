@@ -142,7 +142,8 @@ class LibraryManager(threading.Thread):
         else: # 첫 로그인이라면 새로운 토큰을 추가한다.
             cursor.execute("insert into sign_in values(?, ?, ?, ?)", (token, lib_id, user_id, time()))
         conn.close()
-        
+
+        print(sign_res,token,'-------------')
         return sign_res, token
 
     # 모든좌석정보 요청 2-1	token
